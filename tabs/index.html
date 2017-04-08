@@ -1,5 +1,6 @@
-
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <style>
   .ui-tabs-active {
@@ -27,15 +28,8 @@
   </div>
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 <script>
   $( document ).ready(function() {
-    var jq = document.createElement('script');
-    jq.src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js";
-    document.getElementsByTagName('head')[0].appendChild(jq);
-
     $( "#tabs" ).tabs({
       active: 0,
       hide: { effect: "fade", duration: 500 },
